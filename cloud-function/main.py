@@ -14,7 +14,7 @@ agent = create_agent(model=model)
 
 # 2. HTTP-triggered function
 @functions_framework.http
-def hello_world(request):
+def process_request(request):
     """Responds to HTTP requests by passing the input prompt to the AI agent."""
     
     # Parse the request body for the user's prompt or question
