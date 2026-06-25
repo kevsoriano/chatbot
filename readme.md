@@ -11,8 +11,8 @@ kill -9 $(lsof -t -i:8080)
 ## To Update Code:
 gcloud run deploy my-python-function \
     --source . \
-    --function hello_world \
-    --base-image python311 \
+    --function process_request \
+    --base-image python313 \
     --region us-central1 \
     --allow-unauthenticated
 
@@ -26,7 +26,7 @@ gcloud run services update my-python-function \
 ## A. Deploy with 0% Traffic (Canary Testing)
 gcloud run deploy my-python-function \
     --source . \
-    --function hello_world \
+    --function process_request \
     --region us-central1 \
     --no-traffic \
     --tag staging
