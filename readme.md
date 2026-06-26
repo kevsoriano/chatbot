@@ -1,9 +1,9 @@
 # virtual environment
 cd path/to/your/project
-python3 -m venv .venv
+python3.13 -m venv .venv
 source .venv/bin/activate
 
-pip install functions-framework
+pip install -r requirements.txt
 
 lsof -i :8080
 kill -9 $(lsof -t -i:8080)

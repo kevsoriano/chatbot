@@ -1,0 +1,6 @@
+google-cloud-aiplatform[agent_engines,adk]>=1.70.0  # Required to interact with Vertex AI and Agent Engine
+
+langchain-core>=0.3.0            # Core abstractions (Messages, Tools, PromptTemplates)
+langgraph>=0.2.0                 # Multi-agent state machine and routing framework
+
+langchain-google-vertexai
